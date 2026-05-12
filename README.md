@@ -1,5 +1,3 @@
-```bash
-cat > README.md << 'EOF'
 # Quadruple Tank — LQI Control System
 
 Model-based optimal control design and real hardware deployment for a nonlinear coupled quadruple tank system using LQI (Linear Quadratic Integral) control.
@@ -25,13 +23,6 @@ Quanser Coupled Tanks — 4 tanks, 2 pump inputs, 4 water level outputs. The tan
 - `LQI_Controller.slx` — full closed-loop Simulink model with nonlinear tank plant
 - `LQI_params.mat` — all necessary parameters for hardware deployment
 
-## Requirements
-
-- MATLAB R2021b or later
-- Simulink
-- Curve Fitting Toolbox (required to load pump parameter files)
-- Optimization Toolbox (required for equilibrium computation via fmincon)
-
 ## How to Run
 
 1. Run `main_validation.m` to validate the grey-box model
@@ -41,11 +32,3 @@ Quanser Coupled Tanks — 4 tanks, 2 pump inputs, 4 water level outputs. The tan
 ## Results
 
 Controller achieves zero steady-state error with smooth step tracking on both simulation and real Quanser hardware.
-EOF
-
-git add README.md
-git commit -m "Add README"
-git push
-```
-
-Hepsini kopyala, terminale yapıştır — tek seferde çalışır.
