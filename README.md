@@ -23,6 +23,13 @@ Quanser Coupled Tanks — 4 tanks, 2 pump inputs, 4 water level outputs. The tan
 - `LQI_Controller.slx` — full closed-loop Simulink model with nonlinear tank plant
 - `LQI_params.mat` — all necessary parameters for hardware deployment
 
+## Requirements
+
+- MATLAB R2021b or later
+- Simulink
+- Curve Fitting Toolbox (required to load pump parameter files)
+- Optimization Toolbox (required for equilibrium computation via fmincon)
+
 ## How to Run
 
 1. Run `main_validation.m` to validate the grey-box model
